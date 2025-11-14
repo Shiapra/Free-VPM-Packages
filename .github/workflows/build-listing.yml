@@ -1,7 +1,8 @@
 name: Build Repo Listing
 
 on: 
-  workflow_dispatch:
+  repository_dispatch:
+    types: package-update
   push:
     branches: main
     paths: source.json
